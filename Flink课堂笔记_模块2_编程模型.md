@@ -392,3 +392,15 @@ public class MonitorFunction extends KeyedProcessFunction<String, Event, Alert> 
 ---
 
 **下一模块预告**：在下一个模块中，我们将学习Flink的高级特性，包括状态管理、检查点机制、保存点机制等，以及如何使用这些特性构建可靠的流处理应用。
+
+## 完整代码示例参考
+
+本模块讨论的DataStream API和DataSet API的完整代码示例，可以帮助您更好地理解其用法和编程模式。
+
+-   **DataStream API 示例**:
+    请参考项目中的 `src/module2_programming_model/DataStreamAPIExample.java` 文件。该示例演示了如何创建一个基本的Flink流处理程序，包括设置环境、创建数据源、执行map转换以及打印结果。
+
+-   **DataSet API 示例**:
+    请参考项目中的 `src/module2_programming_model/DataSetAPIExample.java` 文件。该示例展示了如何使用DataSet API进行批处理，包括创建数据集、执行map和filter转换，并输出结果。
+
+建议您结合笔记中的理论知识，动手实践这些代码示例，以加深理解。

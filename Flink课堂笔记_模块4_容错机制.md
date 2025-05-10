@@ -532,3 +532,15 @@ public class FaultTolerantJob {
 ---
 
 **下一模块预告**：在下一个模块中，我们将学习Flink的实战应用，包括实时数据仓库、实时推荐系统、实时风控系统等案例，以及如何将Flink与其他大数据技术集成。
+
+## 完整代码示例参考
+
+本模块讨论的检查点（Checkpoint）和保存点（Savepoint）机制，是Flink容错能力的核心。通过以下完整代码示例，您可以更好地理解它们在实际应用中的配置和作用：
+
+-   **检查点机制示例 (`CheckpointingExample.java`)**:
+    请参考项目中的 `src/module4_fault_tolerance/CheckpointingExample.java` 文件。该示例演示了如何在Flink作业中启用和配置检查点，以及设置重启策略以实现故障恢复。代码中还模拟了故障场景，以便观察检查点和恢复过程。
+
+-   **保存点机制示例 (`SavepointExample.java`)**:
+    请参考项目中的 `src/module4_fault_tolerance/SavepointExample.java` 文件。该示例展示了一个可以手动触发保存点的Flink作业结构。重点在于为算子分配UID，这是从保存点恢复作业（尤其是在代码或拓扑发生变化时）的关键。笔记中也包含了如何通过Flink CLI触发保存点和从保存点恢复作业的说明。
+
+建议您结合笔记中的理论，运行这些示例，并尝试手动触发保存点和模拟故障恢复，以加深对Flink容错机制的理解。

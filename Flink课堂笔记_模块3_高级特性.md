@@ -386,3 +386,18 @@ descriptor.enableTimeToLive(ttlConfig);
 ---
 
 **下一模块预告**：在下一个模块中，我们将深入学习Flink的容错机制，包括端到端的精确一次语义、事务型Sink等高级特性，以及如何构建高可靠性的Flink应用。
+
+## 完整代码示例参考
+
+本模块讨论的窗口操作、时间语义与Watermark以及状态管理等高级特性，通过以下完整代码示例可以帮助您更好地理解它们的具体实现和应用：
+
+-   **窗口操作示例 (`WindowOperationsExample.java`)**:
+    请参考项目中的 `src/module3_advanced_features/WindowOperationsExample.java` 文件。该示例演示了如何使用Flink的窗口API（如滚动窗口）对数据流进行聚合操作。
+
+-   **事件时间处理示例 (`EventTimeExample.java`)**:
+    请参考项目中的 `src/module3_advanced_features/EventTimeExample.java` 文件。该示例展示了如何配置事件时间语义，使用Watermark处理乱序数据，并基于事件时间进行窗口计算。
+
+-   **状态管理示例 (`StateManagementExample.java`)**:
+    请参考项目中的 `src/module3_advanced_features/StateManagementExample.java` 文件。该示例演示了如何使用Flink的Keyed State（特别是ValueState）在流处理应用中维护和更新状态，例如统计每个用户的事件数。
+
+建议您仔细阅读这些示例代码，并尝试运行和修改它们，以便更深入地掌握Flink高级特性的使用方法。

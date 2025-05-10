@@ -535,3 +535,12 @@ Elasticsearch是一个流行的分布式搜索和分析引擎。
 ---
 
 **课程总结与展望**：在下一个（也是最后一个）模块中，我们将对整个Flink课程进行总结，回顾核心概念和技术，并展望Flink的未来发展趋势和更广阔的应用前景。
+
+## 完整代码示例参考
+
+本模块讨论的Flink实战应用，特别是实时数据仓库的场景，可以通过以下代码示例加深理解：
+
+-   **实时数据仓库示例 (`RealTimeDataWarehouseExample.java`)**:
+    请参考项目中的 `src/module5_real_world_applications/RealTimeDataWarehouseExample.java` 文件。该示例使用Flink SQL构建了一个简化的实时数据仓库场景，通过`datagen` connector模拟订单数据流，并实时聚合统计每种商品的销售额。它展示了如何定义表源、执行SQL查询以及处理动态表结果。
+
+学习此示例有助于理解如何将Flink应用于构建实时数据分析和处理系统。建议您尝试修改和扩展此示例，例如接入真实的Kafka数据源，或实现更复杂的业务逻辑。
